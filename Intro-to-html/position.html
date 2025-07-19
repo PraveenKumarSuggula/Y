@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position Practice</title>
+</head>
+
+<body style="
+            height: 3000px;
+            padding-top: 60px;
+            padding-left: 70px;
+            ">
+    <div style="
+            background-color: rgb(60, 55, 55);
+            color: white;
+            position: fixed;
+            top: 0;
+            height: 50px;
+            left:0;
+            right: 0;
+            z-index: 1;
+            ">Header (Fixed)
+    </div>
+
+    <div style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top:50px;
+        width: 65px;
+        ">Sidebar (Fixed)
+
+        <div style="
+        background-color: rgb(251, 0, 0);
+        color: white;
+        /* position absolute depends on browser PAGE. i.e, placed on the page */
+        /* position fixed depends on browser WINDOW. i.e, placed on the browser window */
+        position: absolute;
+        right: 0;
+        top: 0;
+        ">X
+        </div>
+
+        <div style="
+        background-color: rgb(251, 0, 0);
+        color: white;
+        /* position absolute depends on browser PAGE. i.e, placed on the page */
+        /* position fixed depends on browser WINDOW. i.e, placed on the browser window */
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        ">absolute
+        </div>
+
+        <div style="
+        background-color: rgb(251, 0, 0);
+        color: white;
+        /* position absolute depends on browser PAGE. i.e, placed on the page */
+        /* position fixed depends on browser WINDOW. i.e, placed on the browser window */
+        position: absolute;
+        right: 10px;
+        top: 120px;
+        ">absolute
+        </div>
+
+    </div>
+
+    <div style="
+            background-color: rgb(60, 55, 55);
+            color: white;
+            position: fixed;
+            height: 50px;
+            bottom: 0px;
+            left:0;
+            right: 0;
+            z-index: 1;
+            ">Footer (Fixed)
+    </div>
+
+    <div style="
+        background-color: rgb(251, 0, 0);
+        color: white;
+        position: absolute;
+        left: 200px;
+        top: 100px;
+        ">absolute (In static element, Its on page not to div 1)
+    </div>
+
+    <div style="
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            /* margin-top: 100px; not a good way. use padding at top to get content below header */
+            position: static;
+            ">div 1 (static)
+    </div>
+
+    <div style="
+            background-color: lightpink;
+            height: 200px;
+            width: 200px;
+            position: relative;
+        ">div 2 (relative)
+
+        <div style="
+        background-color: rgb(251, 0, 0);
+        color: white;
+        position: absolute;
+        left: 60px;
+        right: 10px;
+        ">absolute (good. In relative element, its on div 2)
+        </div>
+
+        <div style="
+        background-color: rgb(251, 0, 0);
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        ">5:00
+        </div>
+    </div>
+
+    <div style="
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            position: static;
+            ">div 3 (static)
+    </div>
+</body>
+
+</html>
