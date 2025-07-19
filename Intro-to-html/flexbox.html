@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Practice</title>
+</head>
+
+<body style="padding-bottom: 1000px;">
+    <div style="
+        display: flex;
+        flex-direction: row;
+        ">
+        <div style="background-color: lightblue;">div 1 text</div>
+        <div style="background-color: lightpink;">div 2 <p>text</p>
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        ">
+        <div style="background-color: lightblue;">div 1 text</div>
+        <div style="background-color: lightpink;">div 2 <p>text</p>
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        ">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink;
+        flex:1">flex: 1
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        ">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink;
+        flex:1">flex: 1
+        </div>
+        <div style="background-color: lightblue;
+        flex:2">flex: 2
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* horizontal center */
+        ">
+        <div style="background-color: lightpink; width: 100px;">
+            100px
+        </div>
+        <div style="background-color: lightblue; width: 100px;">
+            100px
+        </div>
+        <div style="background-color: lightpink; width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+        <div style="background-color: lightpink; width: 100px;">
+            100px
+        </div>
+        <div style="background-color: lightblue; width: 100px;">
+            100px
+        </div>
+        <div style="background-color: lightpink; width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center; /* vertical center */
+        ">
+        <div style="background-color: lightpink; width: 100px;">
+            100px
+        </div>
+        <div style="background-color: lightblue; width: 100px;">
+            100px
+        </div>
+        <div style="background-color: lightpink; width: 100px;">
+            100px
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border: 1px solid gray;
+    ">
+        <div style="background-color: lightpink;">
+            item1
+        </div>
+        <div style="background-color: lightblue;">
+            item2
+        </div>
+    </div>
+    <style>
+        div {
+            font-family: Arial;
+        }
+
+        .container {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            border: 1px solid gray;
+            border-radius: 6px;
+            width: 60%;
+            /* font-size: 25px;
+            padding: 18px; */
+        }
+
+        .count {
+            background-color: rgb(49, 109, 245);
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 6px;
+            padding-top: 6px;
+            flex: 1;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    </style>
+    <div class="container">
+        <div class="flexbox">
+            <div>Home</div>
+            <div class="count">14</div>
+        </div>
+
+        <div class="flexbox">
+            <div>Notifications</div>
+            <div class="count">3</div>
+        </div>
+
+        <div class="flexbox">
+            <div>Messages</div>
+            <div class="count">5</div>
+        </div>
+    </div>
+
+    <style>
+        .pet-container {
+            margin-top: 30px;
+            font-family: Arial;
+            width: 50%;
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+
+        .pet-flexbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .pet-profile {
+            width: 90px;
+        }
+
+        .pet-profile-pic {
+            border-radius: 50%;
+        }
+
+        .pet-info {
+            flex: 1;
+            min-width: 150px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .pet-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 6px;
+            margin-top: 0px;
+        }
+
+        .pet-description {
+            font-size: 22px;
+            color: rgb(146, 141, 141);
+            margin-bottom: 6px;
+            margin-top: 0px;
+
+        }
+
+        .pet-popularity {
+            font-size: 20px;
+            color: rgb(146, 141, 141);
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .pet-follow {
+            background-color: rgb(49, 109, 245);
+            color: white;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+
+    <div class="pet-container">
+        <div class="pet-flexbox">
+            <div class="pet-profile">
+                <img class="pet-profile-pic" src="/thumbnails/channel-3.png">
+            </div>
+            <div class="pet-info">
+                <p class="pet-title">oliver</p>
+                <p class="pet-description">the cat</p>
+                <p class="pet-popularity">Popular</p>
+            </div>
+            <div class="pet-follow">Follow</div>
+        </div>
+
+        <div class="pet-flexbox">
+            <div class="pet-profile">
+                <img class="pet-profile-pic" src="/thumbnails/channel-1.png">
+            </div>
+            <div class="pet-info">
+                <p class="pet-title">Mimi</p>
+                <p class="pet-description">Sleepy Cat</p>
+                <p class="pet-popularity">Popular</p>
+            </div>
+            <div class="pet-follow">Follow</div>
+        </div>
+
+        <div class="pet-flexbox">
+            <div class="pet-profile">
+                <img class="pet-profile-pic" src="/thumbnails/channel-6.png">
+            </div>
+            <div class="pet-info">
+                <p class="pet-title">Rex</p>
+                <p class="pet-description">Happy Bulldog</p>
+                <p class="pet-popularity">Popular</p>
+            </div>
+            <div class="pet-follow">Follow</div>
+        </div>
+    </div>
+
+    <style>
+        .search-container {
+            font-family: Arial;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 90%;
+        }
+
+        .home {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            width: 100px;
+        }
+
+        .search {
+            flex: 1;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+
+        .searchbox {
+            border-radius: 20px;
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+            max-width: 460px;
+            border: none;
+        }
+
+        .download {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        .download-btn {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 100px;
+        }
+    </style>
+
+    <div class="search-container">
+        <div class="home">Home</div>
+        <div class="search">
+            <input class="searchbox" type="text" placeholder="Search">
+        </div>
+        <div class="download">
+            <button class="download-btn">Download</button>
+        </div>
+    </div>
+</body>
+
+</html>
