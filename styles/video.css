@@ -30,13 +30,9 @@
 }
 
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;
   position: absolute;
   right: 5px;
   bottom: 8px;
@@ -55,7 +51,7 @@
   margin-bottom: 4px;
 }
 
-.video-grid {
+.video-grid { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
